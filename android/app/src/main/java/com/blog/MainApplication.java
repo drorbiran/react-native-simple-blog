@@ -1,4 +1,4 @@
-package com.reactnativeinit;
+package com.blog;
 
 import android.support.annotation.Nullable;
 

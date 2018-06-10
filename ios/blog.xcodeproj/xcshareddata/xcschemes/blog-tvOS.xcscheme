@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "reactNativeInit-tvOS.app"
-               BlueprintName = "reactNativeInit-tvOS"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blog-tvOS.app"
+               BlueprintName = "blog-tvOS"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "reactNativeInit-tvOSTests.xctest"
-               BlueprintName = "reactNativeInit-tvOSTests"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blog-tvOSTests.xctest"
+               BlueprintName = "blog-tvOSTests"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "reactNativeInit-tvOSTests.xctest"
-               BlueprintName = "reactNativeInit-tvOSTests"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blog-tvOSTests.xctest"
+               BlueprintName = "blog-tvOSTests"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeInit-tvOS.app"
-            BlueprintName = "reactNativeInit-tvOS"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog-tvOS.app"
+            BlueprintName = "blog-tvOS"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeInit-tvOS.app"
-            BlueprintName = "reactNativeInit-tvOS"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog-tvOS.app"
+            BlueprintName = "blog-tvOS"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeInit-tvOS.app"
-            BlueprintName = "reactNativeInit-tvOS"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog-tvOS.app"
+            BlueprintName = "blog-tvOS"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -10,7 +10,7 @@ Navigation.events().registerAppLaunchedListener(() => {
         children: [
           {
             component: {
-              name: 'reactNativeInit.App'
+              name: 'blog.App'
             }
           }
         ],

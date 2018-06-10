@@ -1,4 +1,4 @@
-rootProject.name = 'reactNativeInit'
+rootProject.name = 'blog'
  
 include ':app'
 

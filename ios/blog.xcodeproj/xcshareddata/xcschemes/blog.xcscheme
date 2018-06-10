@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "reactNativeInit.app"
-               BlueprintName = "reactNativeInit"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blog.app"
+               BlueprintName = "blog"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactNativeInitTests.xctest"
-               BlueprintName = "reactNativeInitTests"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blogTests.xctest"
+               BlueprintName = "blogTests"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactNativeInitTests.xctest"
-               BlueprintName = "reactNativeInitTests"
-               ReferencedContainer = "container:reactNativeInit.xcodeproj">
+               BuildableName = "blogTests.xctest"
+               BlueprintName = "blogTests"
+               ReferencedContainer = "container:blog.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactNativeInit.app"
-            BlueprintName = "reactNativeInit"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog.app"
+            BlueprintName = "blog"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactNativeInit.app"
-            BlueprintName = "reactNativeInit"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog.app"
+            BlueprintName = "blog"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactNativeInit.app"
-            BlueprintName = "reactNativeInit"
-            ReferencedContainer = "container:reactNativeInit.xcodeproj">
+            BuildableName = "blog.app"
+            BlueprintName = "blog"
+            ReferencedContainer = "container:blog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

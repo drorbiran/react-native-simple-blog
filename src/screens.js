@@ -5,7 +5,7 @@ import Screen1 from './Screen1';
 
 export function registerScreens() {
 
-  Navigation.registerComponent('reactNativeInit.App', () => App);
-  Navigation.registerComponent('reactNativeInit.Screen1', () => Screen1);
+  Navigation.registerComponent('blog.App', () => App);
+  Navigation.registerComponent('blog.Screen1', () => Screen1);
 
 }

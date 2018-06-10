@@ -1,4 +1,4 @@
-package com.reactnativeinit;
+package com.blog;
 
 import com.reactnativenavigation.NavigationActivity;
 
