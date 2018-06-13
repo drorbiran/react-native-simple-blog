@@ -10,14 +10,14 @@ Navigation.events().registerAppLaunchedListener(() => {
         children: [
           {
             component: {
-              name: 'blog.App'
+              name: 'blog.PostsList'
             }
           }
         ],
         options: {
           topBar: {
             title: {
-              text: 'React Native Init'
+              text: 'Blog'
             }
           }
         }
