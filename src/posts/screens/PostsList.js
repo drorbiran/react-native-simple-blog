@@ -16,6 +16,23 @@ class PostsList extends PureComponent {
     this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
   }
 
+  static get options() {
+    return {
+      topBar: {
+        rightButtons: [
+          {
+            id: 'addPost',
+            title: 'Add'
+          }
+        ]
+      }
+    };
+  }
+
+  onNavigationButtonPressed(buttonId) {
+    console.error(buttonId);
+  }
+
   pushViewPostScreen() {
     Navigation.push(this.props.componentId, {
       component: {
