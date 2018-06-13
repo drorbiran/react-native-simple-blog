@@ -5,7 +5,7 @@ class AddPost extends PureComponent {
 
   render() {
     return (
-      <View flex center bg-green70>
+      <View flex center bg-green60>
         <Text>Add Post Screen</Text>
       </View>
     );
