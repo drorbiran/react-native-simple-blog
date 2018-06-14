@@ -6,7 +6,6 @@ import {Navigation} from 'react-native-navigation';
 class PostsList extends PureComponent {
 
   static propTypes = {
-    navigator: PropTypes.object,
     componentId: PropTypes.string
   };
 
@@ -14,6 +13,7 @@ class PostsList extends PureComponent {
     super(props);
 
     this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
+    this.showAddPostModal = this.showAddPostModal.bind(this);
   }
 
   static get options() {
@@ -30,7 +30,9 @@ class PostsList extends PureComponent {
   }
 
   onNavigationButtonPressed(buttonId) {
-    console.error(buttonId);
+    if (buttonId === 'addPost') {
+      this.showAddPostModal();
+    }
   }
 
   pushViewPostScreen() {
@@ -47,6 +49,18 @@ class PostsList extends PureComponent {
             }
           }
         }
+      }
+    });
+  }
+
+  showAddPostModal() {
+    Navigation.showModal({
+      stack: {
+        children: [{
+          component: {
+            name: 'blog.AddPost',
+          }
+        }]
       }
     });
   }
