@@ -12,7 +12,8 @@
     "default-case": 0,
     "lodash/import-scope": 0,
     "react/jsx-handler-names": 0,
-    "no-restricted-globals": ["error", "fit", "fdescribe"]
+    "no-restricted-globals": ["error", "fit", "fdescribe"],
+    "no-alert": 0
   },
   "globals": {
     "waitFor": true
