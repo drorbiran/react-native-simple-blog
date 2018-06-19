@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {View, Text, TextInput} from 'react-native-ui-lib';
+import {View, TextInput} from 'react-native-ui-lib';
 import {Navigation} from 'react-native-navigation';
 import PropTypes from 'prop-types';
 
