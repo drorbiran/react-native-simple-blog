@@ -1,9 +1,3 @@
-export function action$fetchPosts() {
-  return {
-    type: 'FETCH_POSTS',
-    payload: mockPosts
-  };
-}
 
 const mockPosts = [
   {
@@ -28,3 +22,12 @@ const mockPosts = [
     img: 'https://images.unsplash.com/photo-1520014380140-c48c62c3ac38?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24118c3959d020a8aac901ad51bf2618&auto=format&fit=crop&w=120&q=80'
   },
 ];
+
+export function action$fetchPosts() {
+  return {
+    type: 'FETCH_POSTS',
+    payload: mockPosts
+  };
+}
+
+

@@ -9,19 +9,17 @@ import PostsList from './posts/screens/PostsList';
 
 export function registerScreens() {
 
-  Navigation.registerComponent('blog.PostsList', sceneCreator(PostsList, store));
+  Navigation.registerComponent('blog.PostsList', withRedux(PostsList, store));
   Navigation.registerComponent('blog.AddPost', () => require('./posts/screens/AddPost').default);
   Navigation.registerComponent('blog.ViewPost', () => require('./posts/screens/ViewPost').default);
 
 }
 
-function sceneCreator(sceneComp, store) {
+function withRedux(Comp, store) {
   return () => {
-    return class Wrapper extends React.Component {
+    return class WithReduxComponent extends React.Component {
       render() {
-        return (
-          <Provider store={store}>{React.createElement(sceneComp)}</Provider>
-        );
+        return <Provider store={store}><Comp {...this.props}/></Provider>;
       }
     };
   };

@@ -81,7 +81,7 @@ class PostsList extends PureComponent {
     return (
       <View flex center bg-blue60>
         <Text onPress={this.pushViewPostScreen}>Posts List Screen</Text>
-        <Text>{this.props.posts}</Text>
+        <Text>{JSON.stringify(this.props.posts)}</Text>
       </View>
     );
   }
