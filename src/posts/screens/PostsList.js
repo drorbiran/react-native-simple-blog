@@ -70,7 +70,7 @@ class PostsList extends PureComponent {
   render() {
     return (
       <View flex center bg-blue60>
-        <Text onPress={this.pushViewPostScreen}>Posts List Screen</Text>
+        <Text text40 onPress={this.pushViewPostScreen}>Posts List Screen</Text>
       </View>
     );
   }

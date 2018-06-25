@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {View, Text, TextInput} from 'react-native-ui-lib';
+import {View, TextInput} from 'react-native-ui-lib';
 import {Navigation} from 'react-native-navigation';
 import PropTypes from 'prop-types';
 
@@ -13,6 +13,7 @@ class AddPost extends PureComponent {
     super(props);
 
     this.onChangeText = this.onChangeText.bind(this);
+    this.onSavePressed = this.onSavePressed.bind(this);
   }
 
   static get options() {
@@ -38,8 +39,16 @@ class AddPost extends PureComponent {
     if (buttonId === 'cancelBtn') {
       Navigation.dismissModal(this.props.componentId);
     } else if (buttonId === 'saveBtn') {
-      alert('saveBtn');
+      this.onSavePressed();
     }
+  }
+
+  onSavePressed() {
+    Navigation.dismissModal(this.props.componentId);
+    //In here, we will send a request for saving the post.
+    setTimeout(() => {
+      alert('post was saved');
+    }, 1000);
   }
 
   onChangeText(text) {
