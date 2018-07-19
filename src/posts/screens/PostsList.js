@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import {View, Text} from 'react-native-ui-lib';
 import PropTypes from 'prop-types';
 import {Navigation} from 'react-native-navigation';
@@ -7,7 +7,7 @@ import {connect} from 'remx';
 import {postsStore} from '../posts.store';
 import * as postsActions from '../posts.actions';
 
-class PostsList extends PureComponent {
+class PostsList extends Component {
 
   static propTypes = {
     componentId: PropTypes.string,
@@ -88,7 +88,7 @@ class PostsList extends PureComponent {
   }
 }
 
-function mapStateToProps(ownProps) {
+function mapStateToProps() {
   return {
     posts: postsStore.getPostsArray()
   };

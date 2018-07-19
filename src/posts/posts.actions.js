@@ -1,6 +1,6 @@
 import {postsStore} from './posts.store';
 
-const posts = [
+const mockPosts = [
   {
     id: 1,
     title: 'Post1',
@@ -15,6 +15,19 @@ const posts = [
   },
 ];
 
-export function fetchPosts() {
-  postsStore.setPosts(posts);
+export async function fetchPosts() {
+  const mockPosts = await mockFetch();
+  postsStore.setPosts(mockPosts);
 }
+
+async function mockFetch() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(mockPosts);
+    }, 1000);
+  });
+}
+
+
+
+
