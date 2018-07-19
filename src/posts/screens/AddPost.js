@@ -12,6 +12,7 @@ class AddPost extends PureComponent {
   constructor(props) {
     super(props);
 
+    Navigation.events().bindComponent(this);
     this.onChangeText = this.onChangeText.bind(this);
     this.onSavePressed = this.onSavePressed.bind(this);
   }
@@ -24,18 +25,18 @@ class AddPost extends PureComponent {
         },
         rightButtons: [{
           id: 'saveBtn',
-          title: 'Save',
+          text: 'Save',
           enabled: false
         }],
         leftButtons: [{
           id: 'cancelBtn',
-          title: 'Cancel'
+          text: 'Cancel'
         }]
       }
     };
   }
 
-  onNavigationButtonPressed(buttonId) {
+  navigationButtonPressed({buttonId}) {
     if (buttonId === 'cancelBtn') {
       Navigation.dismissModal(this.props.componentId);
     } else if (buttonId === 'saveBtn') {
@@ -56,7 +57,7 @@ class AddPost extends PureComponent {
       topBar: {
         rightButtons: [{
           id: 'saveBtn',
-          title: 'Save',
+          text: 'Save',
           enabled: !!text
         }]
       }
