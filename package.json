@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "fake-server": "json-server --watch db.json",
     "test": "jest"
   },
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.3.0-alpha.1",
     "react-native": "0.51.1",
     "react-native-navigation": "^2.0.0",

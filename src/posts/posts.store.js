@@ -35,7 +35,7 @@ const getters = remx.getters({
 
 const setters = remx.setters({
   setPosts(posts) {
-    state.posts = posts;
+    state.posts = _.mapKeys(posts, 'id'); //[post1, post2] => { 1: post1, 2: post2}
   }
 });
 
