@@ -17,7 +17,7 @@ class PostsList extends PureComponent {
 
   constructor(props) {
     super(props);
-
+    Navigation.events().bindComponent(this);
     this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
     this.showAddPostModal = this.showAddPostModal.bind(this);
   }
@@ -28,7 +28,7 @@ class PostsList extends PureComponent {
         rightButtons: [
           {
             id: 'addPost',
-            title: 'Add'
+            text: 'Add'
           }
         ]
       }
@@ -39,7 +39,7 @@ class PostsList extends PureComponent {
     this.props.action$fetchPosts();
   }
 
-  onNavigationButtonPressed(buttonId) {
+  navigationButtonPressed(buttonId) {
     if (buttonId === 'addPost') {
       this.showAddPostModal();
     }
