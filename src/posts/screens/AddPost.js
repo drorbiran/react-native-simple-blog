@@ -35,7 +35,7 @@ class AddPost extends PureComponent {
     };
   }
 
-  navigationButtonPressed(buttonId) {
+  navigationButtonPressed({buttonId}) {
     if (buttonId === 'cancelBtn') {
       Navigation.dismissModal(this.props.componentId);
     } else if (buttonId === 'saveBtn') {

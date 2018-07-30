@@ -17,13 +17,7 @@ class PostsList extends PureComponent {
 
   constructor(props) {
     super(props);
-    Navigation.events().bindComponent(this);
-    this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
-    this.showAddPostModal = this.showAddPostModal.bind(this);
-  }
-
-  static get options() {
-    return {
+    Navigation.mergeOptions(this.props.componentId, {
       topBar: {
         rightButtons: [
           {
@@ -32,14 +26,17 @@ class PostsList extends PureComponent {
           }
         ]
       }
-    };
+    });
+    Navigation.events().bindComponent(this);
+    this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
+    this.showAddPostModal = this.showAddPostModal.bind(this);
   }
 
   componentDidMount() {
     this.props.action$fetchPosts();
   }
 
-  navigationButtonPressed(buttonId) {
+  navigationButtonPressed({buttonId}) {
     if (buttonId === 'addPost') {
       this.showAddPostModal();
     }
