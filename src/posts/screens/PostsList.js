@@ -17,7 +17,13 @@ class PostsList extends PureComponent {
 
   constructor(props) {
     super(props);
-    Navigation.mergeOptions(this.props.componentId, {
+    Navigation.events().bindComponent(this);
+    this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
+    this.showAddPostModal = this.showAddPostModal.bind(this);
+  }
+
+  static get options() {
+    return {
       topBar: {
         rightButtons: [
           {
@@ -26,10 +32,7 @@ class PostsList extends PureComponent {
           }
         ]
       }
-    });
-    Navigation.events().bindComponent(this);
-    this.pushViewPostScreen = this.pushViewPostScreen.bind(this);
-    this.showAddPostModal = this.showAddPostModal.bind(this);
+    };
   }
 
   componentDidMount() {
