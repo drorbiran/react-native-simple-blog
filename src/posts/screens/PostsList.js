@@ -2,11 +2,16 @@ import React, {PureComponent} from 'react';
 import {View, Text} from 'react-native-ui-lib';
 import PropTypes from 'prop-types';
 import {Navigation} from 'react-native-navigation';
+import {connect} from 'react-redux';
+
+import {action$fetchPosts} from '../posts.actions';
 
 class PostsList extends PureComponent {
 
   static propTypes = {
-    componentId: PropTypes.string
+    componentId: PropTypes.string,
+    action$fetchPosts: PropTypes.func,
+    posts: PropTypes.array
   };
 
   constructor(props) {
@@ -28,6 +33,10 @@ class PostsList extends PureComponent {
         ]
       }
     };
+  }
+
+  componentDidMount() {
+    this.props.action$fetchPosts();
   }
 
   navigationButtonPressed({buttonId}) {
@@ -66,15 +75,20 @@ class PostsList extends PureComponent {
     });
   }
 
-
-
   render() {
     return (
       <View flex center bg-blue60>
         <Text text40 onPress={this.pushViewPostScreen}>Posts List Screen</Text>
+        <Text>{JSON.stringify(this.props.posts)}</Text>
       </View>
     );
   }
 }
 
-export default PostsList;
+function mapStateToProps(state) {
+  return {
+    posts: state.posts
+  };
+}
+
+export default connect(mapStateToProps, {action$fetchPosts})(PostsList);
